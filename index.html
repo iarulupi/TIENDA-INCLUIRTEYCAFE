@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+content="width=device-width,
+initial-scale=1.0,
+maximum-scale=1.0,
+user-scalable=no">
+
+    <title>Incluirte y Café</title>
+<link rel="icon" type="image/png" href="favicon.png">
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<button onclick="pantallaCompleta()" class="fullscreen-btn">
+    ⛶ Pantalla completa
+</button>
+
+<div class="titulo">
+
+<h1>INCLUIRTE Y CAFÉ</h1>
+
+
+</div>
+
+<div class="catalogo">
+
+    <button class="flecha izquierda" onclick="mover(-300)">‹</button>
+
+    <div class="productos" id="productos">
+
+<div class="producto" onclick="agregar('PEPSI 500 ML', 2200, 'https://cdn-prd-02.pnp.co.za/sys-master/images/h4a/h92/11540338835486/silo-product-image-v2-13Dec2024-180118-6009710722848-Straight_on-277851-1028_400Wx400H')" oncontextmenu="restar('PEPSI 500 ML', 2200); return false;">
+    <img src="https://cdn-prd-02.pnp.co.za/sys-master/images/h4a/h92/11540338835486/silo-product-image-v2-13Dec2024-180118-6009710722848-Straight_on-277851-1028_400Wx400H" alt="PEPSI 500 ML">
+    <p>PEPSI 500 ML</p>
+    <p>$2.200</p>
+</div>
+
+<div class="producto" onclick="agregar('COCA COLA 500 ML', 2900, 'https://simplymarket.com.ar/wp-content/uploads/2025/04/338.jpg')" oncontextmenu="restar('COCA COLA 500 ML', 2900); return false;">
+    <img src="https://simplymarket.com.ar/wp-content/uploads/2025/04/338.jpg" alt="COCA COLA 500 ML">
+    <p>COCA COLA 500 ML</p>
+    <p>$2.900</p>
+</div>
+
+<div class="producto" onclick="agregar('SPRITE 500 ML', 2900, 'https://storage.googleapis.com/images-mus-prd-7e2fdbe.mus.prd.v8.commerce.mi9cloud.com/product-images/detail/1026764000_1')" oncontextmenu="restar('SPRITE 500 ML', 2900); return false;">
+    <img src="https://storage.googleapis.com/images-mus-prd-7e2fdbe.mus.prd.v8.commerce.mi9cloud.com/product-images/detail/1026764000_1" alt="SPRITE 500 ML">
+    <p>SPRITE 500 ML</p>
+    <p>$2.900</p>
+</div>
+
+<div class="producto" onclick="agregar('AQUARIUS 500 ML', 2500, 'https://www.stock.com.py/images/thumbs/0213480.jpeg')" oncontextmenu="restar('AQUARIUS 500 ML', 2500); return false;">
+    <img src="https://www.stock.com.py/images/thumbs/0213480.jpeg" alt="AQUARIUS 500 ML">
+    <p>AQUARIUS 500 ML</p>
+    <p>$2.500</p>
+</div>
+
+<div class="producto" onclick="agregar('AGUA 500 ML', 1400, 'https://tse2.mm.bing.net/th/id/OIP.cwc_TUtfvUAv6pi42z10AAHaHa?r=0&pid=Api')" oncontextmenu="restar('AGUA 500 ML', 1400); return false;">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.cwc_TUtfvUAv6pi42z10AAHaHa?r=0&pid=Api" alt="AGUA 500 ML">
+    <p>AGUA 500 ML</p>
+    <p>$1.400</p>
+</div>
+
+<div class="producto" onclick="agregar('PEPSI 500 ML', 2200, 'https://cdn-prd-02.pnp.co.za/sys-master/images/h4a/h92/11540338835486/silo-product-image-v2-13Dec2024-180118-6009710722848-Straight_on-277851-1028_400Wx400H')" oncontextmenu="restar('PEPSI 500 ML', 2200); return false;">
+    <img src="https://cdn-prd-02.pnp.co.za/sys-master/images/h4a/h92/11540338835486/silo-product-image-v2-13Dec2024-180118-6009710722848-Straight_on-277851-1028_400Wx400H" alt="PEPSI 500 ML">
+    <p>PEPSI 500 ML</p>
+    <p>$2.200</p>
+</div>
+
+<div class="producto" onclick="agregar('AGUAS SABORIZADAS PLACER 500 ML', 1400, 'https://i.ibb.co/zhhrxmft/Chat-GPT-Image-22-sept-2026-10-42-32-p-m.png')" oncontextmenu="restar('AGUAS SABORIZADAS PLACER 500 ML', 1400); return false;">
+    <img src="https://i.ibb.co/zhhrxmft/Chat-GPT-Image-22-sept-2026-10-42-32-p-m.png" alt="AGUAS SABORIZADAS PLACER 500 ML">
+    <p>AGUAS SABORIZADAS PLACER 500 ML</p>
+    <p>$1.400</p>
+</div>
+
+<div class="producto" onclick="agregar('JUGO BAGGIO 200 ML', 1100, 'https://dulcilandia.com.ar/sfe/wp-content/uploads/sites/3/2020/05/13701220.png')" oncontextmenu="restar('JUGO BAGGIO 200 ML', 1100); return false;">
+    <img src="https://dulcilandia.com.ar/sfe/wp-content/uploads/sites/3/2020/05/13701220.png" alt="JUGO BAGGIO 200 ML">
+    <p>JUGO BAGGIO 200 ML</p>
+    <p>$1.100</p>
+</div>
+
+<div class="producto" onclick="agregar('JUGO BIG 200 ML', 700, 'https://i.ibb.co/vxSQfSgX/Chat-GPT-Image-22-sept-2026-10-41-07-p-m.png')" oncontextmenu="restar('JUGO BIG 200 ML', 700); return false;">
+    <img src="https://i.ibb.co/vxSQfSgX/Chat-GPT-Image-22-sept-2026-10-41-07-p-m.png" alt="JUGO BIG 200 ML">
+    <p>JUGO BIG 200 ML</p>
+    <p>$700</p>
+</div>
+
+<div class="producto" onclick="agregar('PEPSI BLACK 200 ML', 2000, 'https://tse4.mm.bing.net/th/id/OIP.IB32W_ZFlsuKS6--PvcU4wHaHa?r=0&pid=Api')" oncontextmenu="restar('PEPSI BLACK 200 ML', 2000); return false;">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.IB32W_ZFlsuKS6--PvcU4wHaHa?r=0&pid=Api" alt="PEPSI BLACK 200 ML">
+    <p>PEPSI BLACK 200 ML</p>
+    <p>$2.000</p>
+</div>
+
+<div class="producto" onclick="agregar('COCA COLA 200 ML', 1500, 'https://images.tcdn.com.br/img/img_prod/1384213/refrigerante_sabor_cola_220_ml_coca_cola_6013_1_e0fd561e6120d74fe39085f2112752e3.jpg')" oncontextmenu="restar('COCA COLA 200 ML', 1500); return false;">
+    <img src="https://images.tcdn.com.br/img/img_prod/1384213/refrigerante_sabor_cola_220_ml_coca_cola_6013_1_e0fd561e6120d74fe39085f2112752e3.jpg" alt="COCA COLA 200 ML">
+    <p>COCA COLA 200 ML</p>
+    <p>$1.500</p>
+</div>
+
+<div class="producto" onclick="agregar('CHOCOLATADA GRANDE', 5000, 'https://a1.soysuper.com/5286a119ba3e48a422afeba0d4918161.1500.0.0.0.wmark.590dd5ab.jpg')" oncontextmenu="restar('CHOCOLATADA GRANDE', 5000); return false;">
+    <img src="https://a1.soysuper.com/5286a119ba3e48a422afeba0d4918161.1500.0.0.0.wmark.590dd5ab.jpg" alt="CHOCOLATADA GRANDE">
+    <p>CHOCOLATADA GRANDE</p>
+    <p>$5.000</p>
+</div>
+
+<div class="producto" onclick="agregar('CHOCOLATADA CHICA', 3000, 'https://a1.soysuper.com/5286a119ba3e48a422afeba0d4918161.1500.0.0.0.wmark.590dd5ab.jpg')" oncontextmenu="restar('CHOCOLATADA CHICA', 3000); return false;">
+    <img src="https://a1.soysuper.com/5286a119ba3e48a422afeba0d4918161.1500.0.0.0.wmark.590dd5ab.jpg" alt="CHOCOLATADA CHICA">
+    <p>CHOCOLATADA CHICA</p>
+    <p>$3.000</p>
+</div>
+
+<div class="producto" onclick="agregar('CAFÉ GRANDE', 5000, 'https://i.ibb.co/qMD9VrbS/Chat-GPT-Image-22-sept-2026-10-43-52-p-m.png')" oncontextmenu="restar('CAFÉ GRANDE', 5000); return false;">
+    <img src="https://i.ibb.co/qMD9VrbS/Chat-GPT-Image-22-sept-2026-10-43-52-p-m.png" alt="CAFÉ GRANDE">
+    <p>CAFÉ GRANDE</p>
+    <p>$5.000</p>
+</div>
+
+<div class="producto" onclick="agregar('CAFÉ CHICO', 3000, 'https://i.ibb.co/7J0r90v7/Chat-GPT-Image-22-sept-2026-10-44-58-p-m.png')" oncontextmenu="restar('CAFÉ CHICO', 3000); return false;">
+    <img src="https://i.ibb.co/7J0r90v7/Chat-GPT-Image-22-sept-2026-10-44-58-p-m.png" alt="CAFÉ CHICO">
+    <p>CAFÉ CHICO</p>
+    <p>$3.000</p>
+</div>
+
+<div class="producto" onclick="agregar('MEDIALUNA', 1100, 'https://i.ibb.co/SDTdYLWS/Chat-GPT-Image-22-sept-2026-10-54-16-p-m.png')" oncontextmenu="restar('MEDIALUNA', 1100); return false;">
+    <img src="https://i.ibb.co/SDTdYLWS/Chat-GPT-Image-22-sept-2026-10-54-16-p-m.png" alt="MEDIALUNA">
+    <p>MEDIALUNA</p>
+    <p>$1.100</p>
+</div>
+
+<div class="producto" onclick="agregar('MEDIALUNA DE JAMÓN Y QUESO', 3000, 'https://images.rappi.com.ar/products/979e4e41-b712-485e-a725-ba060af04277.jpg?e=webp&d=900x750&q=30')" oncontextmenu="restar('MEDIALUNA DE JAMÓN Y QUESO', 3000); return false;">
+    <img src="https://images.rappi.com.ar/products/979e4e41-b712-485e-a725-ba060af04277.jpg?e=webp&d=900x750&q=30" alt="MEDIALUNA DE JAMÓN Y QUESO">
+    <p>MEDIALUNA DE JAMÓN Y QUESO</p>
+    <p>$3.000</p>
+</div>
+
+<div class="producto" onclick="agregar('CHURRO', 1100, 'https://static.vecteezy.com/system/resources/thumbnails/047/601/598/small_2x/freshly-baked-churros-ready-for-enjoyment-cut-out-stock-png.png')" oncontextmenu="restar('CHURRO', 1100); return false;">
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/047/601/598/small_2x/freshly-baked-churros-ready-for-enjoyment-cut-out-stock-png.png" alt="CHURRO">
+    <p>CHURRO</p>
+    <p>$1.100</p>
+</div>
+
+<div class="producto" onclick="agregar('BARRAS DE CEREAL', 1100, 'https://hipermay.com/wp-content/uploads/007778.webp')" oncontextmenu="restar('BARRAS DE CEREAL', 1100); return false;">
+    <img src="https://hipermay.com/wp-content/uploads/007778.webp" alt="BARRAS DE CEREAL">
+    <p>BARRAS DE CEREAL</p>
+    <p>$1.100</p>
+</div>
+
+<div class="producto" onclick="agregar('PAPAS FRITAS/ NACHOS QUENTO', 3500, 'https://jumboargentina.vtexassets.com/arquivos/ids/865991/Papas-Quento-Clasica-92g-1-1037003.jpg?v=638816457743270000')" oncontextmenu="restar('PAPAS FRITAS/ NACHOS QUENTO', 3500); return false;">
+    <img src="https://jumboargentina.vtexassets.com/arquivos/ids/865991/Papas-Quento-Clasica-92g-1-1037003.jpg?v=638816457743270000" alt="PAPAS FRITAS/ NACHOS QUENTO">
+    <p>PAPAS FRITAS/ NACHOS QUENTO</p>
+    <p>$3.500</p>
+</div>
+
+<div class="producto" onclick="agregar('PALITOS SALADOS', 1500, 'https://jumboargentina.vtexassets.com/arquivos/ids/863097/Palitos-Salados-Quento-Snacks-85g-1-1036384.jpg?v=638797451664430000')" oncontextmenu="restar('PALITOS SALADOS', 1500); return false;">
+    <img src="https://jumboargentina.vtexassets.com/arquivos/ids/863097/Palitos-Salados-Quento-Snacks-85g-1-1036384.jpg?v=638797451664430000" alt="PALITOS SALADOS">
+    <p>PALITOS SALADOS</p>
+    <p>$1.500</p>
+</div>
+
+<div class="producto" onclick="agregar('POCHOCLOS', 1500, 'https://i.ibb.co/4wL9v1S6/Chat-GPT-Image-22-sept-2026-10-57-26-p-m.png')" oncontextmenu="restar('POCHOCLOS', 1500); return false;">
+    <img src="https://i.ibb.co/4wL9v1S6/Chat-GPT-Image-22-sept-2026-10-57-26-p-m.png" alt="POCHOCLOS">
+    <p>POCHOCLOS</p>
+    <p>$1.500</p>
+</div>
+
+<div class="producto" onclick="agregar('GALLETITAS CLUB SOCIAL', 1500, 'https://www.eureka.com.ec/4467-large_default/galleta-original-club-social-216-g-9-x-24-g.jpg')" oncontextmenu="restar('GALLETITAS CLUB SOCIAL', 1500); return false;">
+    <img src="https://www.eureka.com.ec/4467-large_default/galleta-original-club-social-216-g-9-x-24-g.jpg" alt="GALLETITAS CLUB SOCIAL">
+    <p>GALLETITAS CLUB SOCIAL</p>
+    <p>$1.500</p>
+</div>
+
+<div class="producto" onclick="agregar('AROS DE ARROZ CON CHOCOLATE', 2200, 'https://http2.mlstatic.com/D_NQ_NP_606170-MLA43812011819_102020-O.webp')" oncontextmenu="restar('AROS DE ARROZ CON CHOCOLATE', 2200); return false;">
+    <img src="https://http2.mlstatic.com/D_NQ_NP_606170-MLA43812011819_102020-O.webp" alt="AROS DE ARROZ CON CHOCOLATE">
+    <p>AROS DE ARROZ CON CHOCOLATE</p>
+    <p>$2.200</p>
+</div>
+
+<div class="producto" onclick="agregar('TOSTADITAS DE ARROZ QUENTO', 3200, 'https://arjosimarprod.vteximg.com.br/arquivos/ids/168133-1000-1000/quento-tostada-arroz-4-quesos-95gr-1-13625.jpg?v=638318685688770000')" oncontextmenu="restar('TOSTADITAS DE ARROZ QUENTO', 3200); return false;">
+    <img src="https://arjosimarprod.vteximg.com.br/arquivos/ids/168133-1000-1000/quento-tostada-arroz-4-quesos-95gr-1-13625.jpg?v=638318685688770000" alt="TOSTADITAS DE ARROZ QUENTO">
+    <p>TOSTADITAS DE ARROZ QUENTO</p>
+    <p>$3.200</p>
+</div>
+
+<div class="producto" onclick="agregar('CUADRADITOS DE MANTECA X2', 1100, 'https://i.ibb.co/gMSzL4KZ/Chat-GPT-Image-22-sept-2026-10-55-35-p-m.png')" oncontextmenu="restar('CUADRADITOS DE MANTECA X2', 1100); return false;">
+    <img src="https://i.ibb.co/gMSzL4KZ/Chat-GPT-Image-22-sept-2026-10-55-35-p-m.png" alt="CUADRADITOS DE MANTECA X2">
+    <p>CUADRADITOS DE MANTECA X2</p>
+    <p>$1.100</p>
+</div>
+
+<div class="producto" onclick="agregar('SÁNDWICH DE PAN ÁRABE', 5000, 'https://www.marubotana.com/institucional/images/productos/Sandwiches/Jamon_y_Queso.webp')" oncontextmenu="restar('SÁNDWICH DE PAN ÁRABE', 5000); return false;">
+    <img src="https://www.marubotana.com/institucional/images/productos/Sandwiches/Jamon_y_Queso.webp" alt="SÁNDWICH DE PAN ÁRABE">
+    <p>SÁNDWICH DE PAN ÁRABE</p>
+    <p>$5.000</p>
+</div>
+
+<div class="producto" onclick="agregar('SÁNDWICH DE PAN PEBETE', 5000, 'https://images.rappi.com.ar/products/1020906-1586809092026.jpg')" oncontextmenu="restar('SÁNDWICH DE PAN PEBETE', 5000); return false;">
+    <img src="https://images.rappi.com.ar/products/1020906-1586809092026.jpg" alt="SÁNDWICH DE PAN PEBETE">
+    <p>SÁNDWICH DE PAN PEBETE</p>
+    <p>$5.000</p>
+</div>
+
+<div class="producto" onclick="agregar('TOSTADO DE MIGA', 5000, 'https://t4.ftcdn.net/jpg/05/09/02/99/360_F_509029955_1ZnxtMbSWdYUNbMX93uIwRM2WAbdB2sI.jpg')" oncontextmenu="restar('TOSTADO DE MIGA', 5000); return false;">
+    <img src="https://t4.ftcdn.net/jpg/05/09/02/99/360_F_509029955_1ZnxtMbSWdYUNbMX93uIwRM2WAbdB2sI.jpg" alt="TOSTADO DE MIGA">
+    <p>TOSTADO DE MIGA</p>
+    <p>$5.000</p>
+</div>
+
+<div class="producto" onclick="agregar('PANCHO', 3000, 'https://tse1.explicit.bing.net/th/id/OIP.EBkD70Ld90EfiJ0YxgS7vAHaHP?r=0&pid=Api')" oncontextmenu="restar('PANCHO', 3000); return false;">
+    <img src="https://tse1.explicit.bing.net/th/id/OIP.EBkD70Ld90EfiJ0YxgS7vAHaHP?r=0&pid=Api" alt="PANCHO">
+    <p>PANCHO</p>
+    <p>$3.000</p>
+</div>
+
+<div class="producto" onclick="agregar('PIZZA INDIVIDUAL', 6500, 'https://applebees.com.mx/wp-content/uploads/2022/12/pizza-de-queso-1.jpg')" oncontextmenu="restar('PIZZA INDIVIDUAL', 6500); return false;">
+    <img src="https://applebees.com.mx/wp-content/uploads/2022/12/pizza-de-queso-1.jpg" alt="PIZZA INDIVIDUAL">
+    <p>PIZZA INDIVIDUAL</p>
+    <p>$6.500</p>
+</div>
+
+<div class="producto" onclick="agregar('CHUPETÍN PALITO DE LA SELVA', 1000, 'https://acdn.mitiendanube.com/stores/004/033/662/products/20230505101856_2987-dc5feb7fafba1c280417085068328530-640-0.png')" oncontextmenu="restar('CHUPETÍN PALITO DE LA SELVA', 1000); return false;">
+    <img src="https://acdn.mitiendanube.com/stores/004/033/662/products/20230505101856_2987-dc5feb7fafba1c280417085068328530-640-0.png" alt="CHUPETÍN PALITO DE LA SELVA">
+    <p>CHUPETÍN PALITO DE LA SELVA</p>
+    <p>$1.000</p>
+</div>
+
+<div class="producto" onclick="agregar('CHUPETÍN PICO DULCE', 1000, 'https://f.fcdn.app/imgs/408707/www.elclon.com.uy/clonuy/5c92/original/catalogo/4692-1/1920-1200/chupetin-pico-dulce-chupetin-pico-dulce.jpg')" oncontextmenu="restar('CHUPETÍN PICO DULCE', 1000); return false;">
+    <img src="https://f.fcdn.app/imgs/408707/www.elclon.com.uy/clonuy/5c92/original/catalogo/4692-1/1920-1200/chupetin-pico-dulce-chupetin-pico-dulce.jpg" alt="CHUPETÍN PICO DULCE">
+    <p>CHUPETÍN PICO DULCE</p>
+    <p>$1.000</p>
+</div>
+
+<div class="producto" onclick="agregar('CHUPETÍN GENÉRICO', 500, 'https://kioskoboxoeste.com.ar/wp-content/uploads/2025/08/20260220_183127_0000.png')" oncontextmenu="restar('CHUPETÍN GENÉRICO', 500); return false;">
+    <img src="https://kioskoboxoeste.com.ar/wp-content/uploads/2025/08/20260220_183127_0000.png" alt="CHUPETÍN GENÉRICO">
+    <p>CHUPETÍN GENÉRICO</p>
+    <p>$500</p>
+</div>
+
+    </div>
+
+    <button class="flecha derecha" onclick="mover(300)">›</button>
+
+</div>
+
+</div>
+
+<h2>Total: $<span id="total">0</span></h2>
+
+<button onclick="cobrar()">COBRAR</button>
+
+<div class="carrito">
+    <h2>🛒 Carrito</h2>
+    <div id="lista-carrito"></div>
+</div>
+
+<button onclick="abrirHistorial()" class="historial-btn">
+    📋 VER HISTORIAL
+</button>
+
+<div id="modal-pago" class="modal">
+
+    <div class="modal-contenido">
+
+        <h2>¿Método de pago?</h2>
+
+        <button onclick="pagarEfectivo()">
+            EFECTIVO
+        </button>
+
+        <button onclick="pagarTransferencia()">
+            TRANSFERENCIA
+        </button>
+
+        <button onclick="cerrarModal()" class="cerrar">
+            CANCELAR
+        </button>
+
+    </div>
+
+</div>
+
+<div id="modal-historial" class="modal">
+
+    <div class="modal-contenido">
+
+        <h2>📋 Historial del día</h2>
+
+        <div id="lista-historial"></div>
+
+        <h3 id="total-dia">
+            TOTAL DEL DÍA: $0
+        </h3>
+
+<button onclick="descargarHistorial()">
+    DESCARGAR HISTORIAL
+</button>
+
+<button onclick="borrarHistorial()" class="borrar-historial-btn">
+    BORRAR HISTORIAL
+</button>
+
+        <button onclick="cerrarHistorial()">
+            CERRAR
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
